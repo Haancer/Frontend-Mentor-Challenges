@@ -1,0 +1,140 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--pale-blue);
+}
+
+.Wrapper{
+    max-width: 32rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0rem 0rem 2rem 0rem;
+    overflow: hidden;
+}
+
+
+.hero img{
+    width: 100%;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.summary h1{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.summary p{
+    color: var(--desaturated-blue);
+}
+
+.plan{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--very-pale-blue);
+    padding: 1rem;
+    margin: 0 1.8rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.plan a{
+    color: var(--bright-blue);
+}
+
+.plan a:hover{
+    text-decoration: none;
+}
+
+.plan-details{
+    display: flex;
+    gap: 1.5rem;
+    min-width: 0;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.payment-link{
+    background-color: var(--bright-blue);
+    text-decoration: none;
+    color: white;
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.payment-link:hover{
+    background-color: #766cf1;
+}
+
+.cancel{
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--desaturated-blue);
+}
+
+.cancel:hover{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.price{
+    color: var(--desaturated-blue);
+}
+
+.annual-plan{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+@media screen and (max-width : 389px){
+    
+    .plan{
+        flex-wrap: wrap;
+    }
+}
