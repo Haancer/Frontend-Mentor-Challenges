@@ -137,4 +137,15 @@ body{
     .plan{
         flex-wrap: wrap;
     }
+
+    .Wrapper{
+        max-width: 32rem;
+        margin: auto;
+        padding: 0.7rem;
+    }
+
+    .payment-link{
+        padding: 1rem 2.5rem;
+       
+    }
 }
