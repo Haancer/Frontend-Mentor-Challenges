@@ -101,11 +101,13 @@ body{
     background-color: var(--bright-blue);
     text-decoration: none;
     color: white;
-    padding: 1rem 5rem;
+    padding: 1rem 0rem;
     border-radius: 1rem;
     font-weight: 700;
     text-align: center;
     margin: 0 1rem;
+    width: 80%;
+    margin: 0rem 2rem;
 }
 
 .payment-link:hover{
@@ -142,10 +144,5 @@ body{
         max-width: 32rem;
         margin: auto;
         padding: 0.7rem;
-    }
-
-    .payment-link{
-        padding: 1rem 2.5rem;
-       
     }
 }
