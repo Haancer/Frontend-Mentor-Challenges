@@ -1,1 +1,1 @@
-This Project is Titled "The Simple Omlette Challenge" from Front End Mentor.
+This Project is Titled "Socials Links" from Front End Mentor.
