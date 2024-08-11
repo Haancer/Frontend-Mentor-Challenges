@@ -1,1 +1,1 @@
-These are front-end mentor challenges
+These are front-end mentor challenges (Recipe Page)
