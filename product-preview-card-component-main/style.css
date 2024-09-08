@@ -1,0 +1,148 @@
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/*---------------------------------------------------RESET--------------------------------------------------------*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--cream);
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+/*----------------------------------------------------------Content CSS------------------------------------------------*/
+
+.Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+@media (min-width: 464px) {
+
+    .Wrapper{
+        display: grid;
+        margin-top: 10rem;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width:40rem;
+    }
+
+    .perf img{
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+.perfume-decs{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    line-height: 1.6rem;
+    color: var(--dark-grayish-blue);
+}
+
+.title_1{
+    letter-spacing: 0.6rem;
+}
+
+.title_2{
+    font-family: "Fraunces",sans-serif;
+    font-size: xx-large;
+    color: black;
+}
+
+
+.pricing{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: var(--dark-cyan);
+}
+
+.new-price{
+    font-size: xx-large;
+    font-family: "Fraunces",sans-serif;
+}
+
+.old-price{
+    color: var(--dark-grayish-blue);
+    text-decoration:line-through;
+}
+
+.add-to-cart{
+    display: flex;
+    gap: 0.6rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0.8rem;
+    color: white;
+    border-radius: 0.8rem;
+    background-color: var(--dark-cyan);
+    border: none;
+    font-weight: 700;
+}
+
+.add-to-cart:hover{
+    background-color: hsl(158, 54%, 19%);
+}
