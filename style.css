@@ -473,6 +473,14 @@ footer li > a:hover{
         padding: 4rem 1rem;
     }
     
+    .footer-overall{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
 
 @media (max-width:1430px) {
