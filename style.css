@@ -465,3 +465,8 @@ footer li > a:hover{
     
 }
 
+@media (max-width:1430px) {
+    .background-sec .overall{
+        padding: 0;
+    }
+}
