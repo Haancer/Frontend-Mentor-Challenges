@@ -398,6 +398,16 @@ footer li > a:hover{
         text-align: center;
         padding: 0 1rem;
     }
+
+    .background-sec{
+        background-image: url(./images/bg-curve-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 4rem;
+    }
+
     .email-txtbox{
         display: flex;
         flex-direction: column;
@@ -463,5 +473,18 @@ footer li > a:hover{
         padding: 4rem 1rem;
     }
     
+    .footer-overall{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
 
+@media (max-width:1430px) {
+    .background-sec .overall{
+        padding: 0;
+    }
+}
